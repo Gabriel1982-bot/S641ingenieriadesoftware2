@@ -1,4 +1,4 @@
-Public class Reader{
+public class Reader{
 
     //atributos
     private String element;
@@ -9,9 +9,9 @@ Public class Reader{
         this.element = element;
         this.converter= converter;
     }
-    //metodos
+    //Métodos
     public void parseInput(){
-        swith (element){
+        switch (element) {
             case "LINE":
                 converter.makeLine();
                 break;
@@ -20,11 +20,10 @@ Public class Reader{
                 break;
             case "TABLE":
                 converter.makeTable();
-                break;
+                break;        
             default:
-                System.out.println("Opcion no valida");
+                System.out.println("Opción no válida");
                 break;
-
         }
     }
 }
